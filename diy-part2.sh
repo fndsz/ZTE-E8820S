@@ -8,7 +8,7 @@
 # Blog: https://p3terx.com
 #============================================================
 
-device_name='E8820S'
+device_name='ZTE-E8820S'
 wifi_name='ZET'
 lan_ip='192.168.1.1'        # Lan Ip地址
 utc_name='Asia\/Shanghai'   # 时区
