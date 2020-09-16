@@ -10,7 +10,7 @@
 
 device_name='E8820S'
 wifi_name='ZET'
-lan_ip='192.168.8.1'        # Lan Ip地址
+lan_ip='192.168.1.1'        # Lan Ip地址
 utc_name='Asia\/Shanghai'   # 时区
  
 #修改机器名称
