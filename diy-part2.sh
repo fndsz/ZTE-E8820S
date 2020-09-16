@@ -34,27 +34,3 @@ sed -i "s/'UTC'/'CST-8'\n   set system.@system[-1].zonename='$utc_name'/g" packa
 echo "修改wifi名称"
 
 sed -i "s/OpenWrt/$wifi_name/g" package/kernel/mac80211/files/lib/wifi/mac80211.sh
-
-#echo '添加OpenClash'
-#git clone -master $openClash_url package/lean/luci-app-openclash 
-#echo 'CONFIG_PACKAGE_luci-app-openclash=y' >> .config
-#echo 'CONFIG_PACKAGE_luci-i18n-openclash-zh-cn=y'  >> .config
-
-#echo '添加Passwall'
-
-#echo 'CONFIG_PACKAGE_luci-app-passwall=y' >> .config
-
-#echo 'CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Shadowsocks=y' >> .config
-
-#echo 'CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Trojan=y' >> .config
-
-#echo 'CONFIG_PACKAGE_luci-app-passwall_INCLUDE_simple-obfs=y' >> .config
-
-#echo 'CONFIG_PACKAGE_luci-app-passwall_INCLUDE_v2ray-plugin=y' >> .config
-
-#echo 'CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Brook=y' >> .config
-
-#echo 'CONFIG_PACKAGE_luci-app-passwall_INCLUDE_kcptun=y' >> .config
-
-#echo 'CONFIG_PACKAGE_luci-i18n-passwall-zh-cn=y'  >> .config
- 
