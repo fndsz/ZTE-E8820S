@@ -24,4 +24,4 @@
 #git clone https://github.com/rufengsuixing/luci-app-adguardhome.git                 package/molun/luci-app-adguardhome
 #git clone https://github.com/vernesong/OpenClash.git                                package/molun/luci-app-openclash
 
-#mv -vf ./02_network ./target/linux/ramips/mt7621/base-files/etc/board.d/02_network
+mv -vf ./02_network ./target/linux/ramips/mt7621/base-files/etc/board.d/02_network
