@@ -12,9 +12,6 @@ device_name='E8820S'
 wifi_name='ZET'
 lan_ip='192.168.8.1'        # Lan Ip地址
 utc_name='Asia\/Shanghai'   # 时区
-#openClash_url='https://github.com/vernesong/OpenClash.git'       # OpenClash包地址 
-
-
  
 #修改机器名称
 echo "设置主机名"
@@ -34,3 +31,8 @@ sed -i "s/'UTC'/'CST-8'\n   set system.@system[-1].zonename='$utc_name'/g" packa
 echo "修改wifi名称"
 
 sed -i "s/OpenWrt/$wifi_name/g" package/kernel/mac80211/files/lib/wifi/mac80211.sh
+
+echo "替换文件"
+
+rm -rf ./target/linux/ramips/mt7621/base-files/etc/board.d/02_network && cd .. && cp -f ./02_network openwrt/target/linux/ramips/mt7621/base-files/etc/board.d/ && cd openwrt
+
