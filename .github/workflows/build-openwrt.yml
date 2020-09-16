@@ -6,7 +6,7 @@
 # Blog: https://p3terx.com
 #=================================================
 
-name: Build Lienol_HC5962_19_07
+name: Build ZTE E8820S
 
 on:
   repository_dispatch:
@@ -16,13 +16,13 @@ on:
     branches:
       - master
     paths:
-      - 'Lienol_OpenWrt_HC5962.config'
+      - 'E8820S.config'
   #schedule:
    # - cron: 0 19 * * *
   #watch:
   #  types: started
 env:
-  REPO_URL:  https://github.com/whjddzyx/openwrt
+  REPO_URL:  https://github.com/coolsnowwolf/lede
   REPO_BRANCH: openwrt-19.07
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: Lienol_OpenWrt_HC5962.config
