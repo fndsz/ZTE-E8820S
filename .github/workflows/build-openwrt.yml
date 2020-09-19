@@ -7,8 +7,7 @@
 # Blog: https://p3terx.com
 #=================================================
 
-name: Build Lean_LEDE_B70_NANO
-
+name: Build ZTE_E8820S
 on:
   repository_dispatch:
   release:
@@ -27,9 +26,9 @@ env:
   REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
-  CONFIG_FILE: 8820s.config
+  CONFIG_FILE: E8820S.config
   DIY_P1_SH: diy-part1.sh
-  DIY_P2_SH: diy-part_NANO.sh
+  DIY_P2_SH: diy-part2.sh
   SSH_ACTIONS: false
   UPLOAD_BIN_DIR: true
   UPLOAD_FIRMWARE: true
