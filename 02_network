@@ -23,9 +23,13 @@ ramips_setup_interfaces()
 			"0:lan:4" "1:lan:3" "2:lan:2" "3:lan:1" "4:wan:5" "6@eth0"
 		ucidef_set_interface_lan "eth0.1 ra0 rai0"
 		;;
-	hiwifi,hc5962|\
+	hiwifi,hc5962）
+	        ucidef_add_switch "switch0" \
+			"0:lan" "1:lan" "2:lan" "3:lan" "4:wan" "6@eth0"
+		ucidef_set_interface_lan "eth0.1 ra0 rai0"
+		;;
 	xiaomi,mir3p)
-		ucidef_set_interfaces_lan_wan "lan1 lan2 lan3 lan4 ra0 rai0" "wan"
+		ucidef_set_interfaces_lan_wan "lan1 lan2 lan3 ra0 rai0" "wan"
 		;;
 	gehua,ghl-r-001)
 		ucidef_add_switch "switch0" \
